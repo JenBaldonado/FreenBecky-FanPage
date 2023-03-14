@@ -7,14 +7,31 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-image: url("images/fb-beach.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.hero-section {
-  background-color: #1f2937;
+button {
+  background-color: #3882f6;
+  box-shadow: 0px 0px 4px #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 8em;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e5e7eb;
+  cursor: pointer;
 }
 
 nav {
+  background-color: #1f2937;
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: center;
   align-items: center;
   color: rgb(4, 6, 100);
@@ -41,7 +58,111 @@ nav {
   column-gap: 1rem;
   font-size: 18px;
 }
+
 a {
   text-decoration: none;
-  color: rgb(39, 37, 37);
+}
+
+.left-hero p,
+.right-items a {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 5rem;
+  background-color: #1f293773;
+}
+
+.right-hero img {
+  transform: rotate(-90deg);
+}
+
+.left-hero {
+  display: block;
+  line-height: 1.5;
+  flex: 0.5;
+}
+
+.left-hero h1 {
+  font-size: 48px;
+  font-weight: extra-bold;
+  color: #f9faf8;
+}
+
+.left-hero p {
+  margin-bottom: 1rem;
+}
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  column-gap: 16px;
+}
+
+.info-section .info {
+  text-align: center;
+  word-wrap: break-word;
+  width: 20rem;
+  height: auto;
+}
+.info-section .box {
+  width: 20rem;
+  height: 20rem;
+  border: 5px solid steelblue;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.qoute-section {
+  background-color: #e5e7eb;
+  padding: 5rem 20rem;
+  line-height: 1.5;
+}
+
+.qoute-section p {
+  font-size: 36px;
+  font-weight: light;
+  font-style: italic;
+  color: #1f2937;
+}
+.qoute-section p + p {
+  display: flex;
+  justify-content: end;
+  padding-top: 0.5rem;
+  font-weight: bold;
+}
+
+.call-section {
+  background-color: #3882f6;
+  margin: 10rem 20rem;
+  padding: 5rem 10rem;
+  border-radius: 12px;
+  display: flex;
+  column-gap: 15rem;
+}
+
+.call-section p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+.call-section p + p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  height: 3rem;
 }
